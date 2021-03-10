@@ -15,7 +15,7 @@ https://raw.githubusercontent.com/dajijiyangmao/UFO/main/HAOYANGMAO/DJNC.js
 https://raw.githubusercontent.com/dajijiyangmao/UFO/main/HAOYANGMAO/DJZD.js
 https://raw.githubusercontent.com/dajijiyangmao/UFO/main/HAOYANGMAO/XJJC.js
 
-7个活动的车，所以，提交7个朱丽娜给机器人就可以。
+7个活动的车，所以，提交7个朱丽娜给机器人就可以。asd
 
 
 https://raw.githubusercontent.com/canghaiyishengxiao2021/dadonggua/main/%E8%BD%AC%E8%BD%BD%E5%A4%A7%E4%BD%AC%E4%BB%A3%E7%A0%81%E5%8F%AA%E5%81%9A%E6%B5%8B%E8%AF%95%E5%AD%A6%E4%B9%A0.png
