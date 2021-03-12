@@ -9,7 +9,7 @@ on:
     #     branches:
     #         - main
     schedule:
-        - cron: "2 4 * * *"
+        - cron: "31 4 * * *"
     workflow_dispatch:
 jobs:
     build:
