@@ -45,3 +45,6 @@ jobs:
           DD_BOT_SECRET: ${{ secrets.DD_BOT_SECRET }}
           IGOT_PUSH_KEY: ${{ secrets.IGOT_PUSH_KEY }}
           BUY_JPY_LEVEL: ${{ secrets.BUY_JPY_LEVEL }}
+          SYNCURL: /The.Flash/The.Flash/jd_crazy_joy_coin.js
+          EFORK: ${{ secrets.EFORK }}
+          GITHUB: ${{ secrets.GITHUB }}
