@@ -1,0 +1,41 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: 喜京工厂
+
+on:
+    # push:
+    #     branches:
+    #         - main
+    schedule:
+        - cron: "13 * * * *"
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js 10.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 10.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: "运行 【喜京工厂】"
+              run: |
+                  node Ponysitters_Club_Season.js
+              env:
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  SYNCURL: /XJJC.js
+                  SCKEY: ${{ secrets.SCKEY }}
+                  BARK_PUSH: ${{ secrets.BARK_PUSH }}
+                  PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
+                  TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                  TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  EFORK: ${{ secrets.EFORK }}
+                  GITHUB: ${{ secrets.GITHUB }}
+                  HELPURL: ${{ secrets.HELPURL }}
+                  IGNORE_COOKIE_JXGC: ${{ github.event.client_payload.IGNORE_COOKIE_JXGC || secrets.IGNORE_COOKIE_JXGC }} #京喜工厂禁用某些cookie的执行,因为通知太烦了呀,比如要禁用第2和第四个的执行,则填入[2,4]即可,包含中括号哦
+                  DREAMFACTORY_FORBID_ACCOUNT: ${{ github.event.client_payload.DREAMFACTORY_FORBID_ACCOUNT || secrets.DREAMFACTORY_FORBID_ACCOUNT }} #京喜工厂禁用某些cookie的执行,因为通知太烦了呀,比如要禁用第2和第四个的执行,则填入[2,4]即可,包含中括号哦
