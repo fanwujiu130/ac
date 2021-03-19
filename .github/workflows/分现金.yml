@@ -22,7 +22,7 @@ on:
     #     branches:
     #         - main
     schedule:
-        - cron: "0 23 * * *"
+        - cron: "7 16 19-24 3 *"
     workflow_dispatch:
 jobs:
     build:
@@ -42,11 +42,11 @@ jobs:
                   node Ponysitters_Club_Season.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
-                  SYNCURL:/The.Flash/The.Flash/z_city_cash.js
+                  SYNCURL: /The.Flash/The.Flash/z_city_cash.js
                   SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
                   TG_USER_ID: ${{ secrets.TG_USER_ID }}
                   EFORK: ${{ secrets.EFORK }}
-                  
+                  GITHUB: ${{ secrets.GITHUB }}
