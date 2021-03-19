@@ -39,4 +39,4 @@ jobs:
                   GITHUB: ${{ secrets.GITHUB }}
                   HELPURL: ${{ secrets.HELPURL }}
                   JXNC_SHARECODES: ${{ secrets.JXNC_SHARECODES }}
-                  IGNORE_COOKIE_JXNC: ${{ secrets.IGNORE_COOKIE_JXNC }}
+                 
