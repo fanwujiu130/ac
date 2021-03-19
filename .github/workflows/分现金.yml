@@ -1,0 +1,52 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+#城城分现金
+#活动入口：京东app-搜索“分现金”
+#活动时间：2021-03-19 - 2021-03-24
+
+#申明：这是一个及其不公平的脚本！
+#申明：这是一个及其不公平的脚本！
+#申明：这是一个及其不公平的脚本！
+
+#助力逻辑：本地添加助力码到本地助力池，从公共助力池拉取3个助力码追加到本地助力池后面。
+#循环助力开始，其实真正收益高的就是头部几个ck。
+#这个脚本不公平的放在于，账号多的人可以获得更高额的收益。
+#账号少的人虽然有机会被被助力，但微乎其微。
+#手机app端运行的用户是肯定被占便宜的。
+#所以请QuantumultX, Surge, Loon, 小火箭用户慎重使用这一脚本。
+
+name: 分现金
+
+on:
+    # push:
+    #     branches:
+    #         - main
+    schedule:
+        - cron: "0 23 * * *"
+    workflow_dispatch:
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v1
+            - name: Use Node.js 10.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 10.x
+            - name: npm install
+              run: |
+                  npm install
+            - name: "运行 【分现金】"
+              run: |
+                  node Ponysitters_Club_Season.js
+              env:
+                  JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  SYNCURL:/The.Flash/The.Flash/z_city_cash.js
+                  SCKEY: ${{ secrets.SCKEY }}
+                  BARK_PUSH: ${{ secrets.BARK_PUSH }}
+                  PUSH_KEY: ${{ secrets.PUSH_KEY }}
+                  TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
+                  TG_USER_ID: ${{ secrets.TG_USER_ID }}
+                  EFORK: ${{ secrets.EFORK }}
+                  
