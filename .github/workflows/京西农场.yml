@@ -38,4 +38,6 @@ jobs:
                   EFORK: ${{ secrets.EFORK }}
                   GITHUB: ${{ secrets.GITHUB }}
                   HELPURL: ${{ secrets.HELPURL }}
-                  
+                  JXNC_SHARECODES: ${{ github.event.client_payload.JXNC_SHARECODES || secrets.JXNC_SHARECODES }}
+                  JXNCTOKENS: ${{ github.event.client_payload.JXNCTOKENS || secrets.JXNCTOKENS }}
+                  IGNORE_COOKIE_JXNC: ${{ github.event.client_payload.IGNORE_COOKIE_JXNC || secrets.IGNORE_COOKIE_JXNC }}
