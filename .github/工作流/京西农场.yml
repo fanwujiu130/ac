@@ -38,6 +38,4 @@ jobs:
                   EFORK: ${{ secrets.EFORK }}
                   GITHUB: ${{ secrets.GITHUB }}
                   HELPURL: ${{ secrets.HELPURL }}
-                  JXNC_SHARECODES: ${{ secrets.JXNC_SHARECODES }}
-                  JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
-                  IGNORE_COOKIE_JXNC: ${{ secrets.IGNORE_COOKIE_JXNC }}
+                 
