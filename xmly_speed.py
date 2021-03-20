@@ -30,7 +30,7 @@ autoTakeOut = False
 amount = 20
 takeOutType = 1
 # 提现账户: 1 -> 支付宝 2 -> 微信
-thirdPayType = 1
+thirdPayType = 2
 
 # ac读取环境变量
 if "XMLY_SPEED_COOKIE" in os.environ:
