@@ -11,11 +11,11 @@ from util import send, requests_session
 
 # 参考 https://github.com/Zero-S1/xmly_speed/blob/master/xmly_speed.py
 
-cookies1 = ""
+cookies1 = "1&_device=iPhone&979E2A2B-D959-4416-8D86-8691C9009B60&2.1.9; 1&_token=310172967&74E0A690340CCA0180B61F12075E45B46BAF1FDCFDB141044F3A88F28BCCF7D13962BA1A1D6047M9B9D61688847B6C_; NSUP=; XD=d13jt3dXycdKBRWxRdvjJncVfH0J0LnOekJMk188wcoRSbitPg/fUAxHBRRZNam08wFaN6acOfu5wh77uqVFqA==; XUM=979E2A2B-D959-4416-8D86-8691C9009B60; _xmLog=xm_kmrsspyb7zf93l; ainr=0; c-oper=%E6%9C%AA%E7%9F%A5; channel=ios-b1; device_model=iPhone 8; idfa=00000000-0000-0000-0000-000000000000; impl=com.ximalaya.tingLite; ip=192.168.31.223; net-mode=WIFI; res=750%2C1334; s&e=0c2b13ce14a3751bed8d64c565e41a9e"
 
-cookies2 = ""
+cookies2 = "1&_device=iPhone&979E2A2B-D959-4416-8D86-8691C9009B60&2.1.9; 1&_token=82747226&A92C7D00240C70436BAC0A212E1B411BB2E472D57620A2861F483E1E92C8B19595453781B42062M9B9D616EB42BCE7_; NSUP=; XD=d13jt3dXycdKBRWxRdvjJncVfH0J0LnOekJMk188wcoRSbitPg/fUAxHBRRZNam0PpGW5h7tWFSrbetAMiWdCA==; XUM=979E2A2B-D959-4416-8D86-8691C9009B60; _xmLog=xm_kmrtel0j32i0gg; ainr=0; c-oper=%E6%9C%AA%E7%9F%A5; channel=ios-b1; device_model=iPhone 8; idfa=00000000-0000-0000-0000-000000000000; impl=com.ximalaya.tingLite; ip=192.168.31.223; net-mode=WIFI; res=750%2C1334; s&e=0c2b13ce14a3751bed8d64c565e41a9e"
 
-cookiesList = [cookies1, ]   # 多账号准备
+cookiesList = [cookies1, cookies2]   # 多账号准备
 
 # 默认不自动提现
 autoTakeOut = False
