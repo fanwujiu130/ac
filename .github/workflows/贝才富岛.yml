@@ -1,14 +1,15 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: 贝才富岛
+
+name: 财富岛
 
 on:
     # push:
     #     branches:
     #         - main
     schedule:
-        - cron: "5 16,0,5,11 * * *"
+        - cron: "30 0,5,11 * * *"
     workflow_dispatch:
 jobs:
     build:
@@ -23,13 +24,13 @@ jobs:
             - name: npm install
               run: |
                   npm install
-            - name: "运行 【贝才富岛】"
+            - name: "运行 【财富岛】"
               run: |
                   node Ponysitters_Club_Season.js
               env:
                   JD_COOKIE: ${{ secrets.JD_COOKIE }}
+                  JXNCTOKENS: ${{ secrets.JXNCTOKENS }}
                   SYNCURL: /The.Flash/The.Flash/j0x_c0f0d.js
-                  SCKEY: ${{ secrets.SCKEY }}
                   BARK_PUSH: ${{ secrets.BARK_PUSH }}
                   PUSH_KEY: ${{ secrets.PUSH_KEY }}
                   TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
