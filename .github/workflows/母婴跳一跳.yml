@@ -8,7 +8,7 @@ on:
     #     branches:
     #         - main
     schedule:
-        - cron: "5 0,6,12 25-31 3 *"
+        - cron: "5 0,6,12 13-18 4 *"
     workflow_dispatch:
 jobs:
     build:
